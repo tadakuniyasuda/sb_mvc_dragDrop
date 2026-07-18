@@ -12,18 +12,27 @@ public class Stats
     public enum Type
     {
         Attack,
-        Defense
+        Defense,
+        Speed,
+        Mana,
+        Health
     }
 
     private SingleStat attackStat;
     private SingleStat defenseStat;
+    private SingleStat speedStat;
+    private SingleStat manaStat;
+    private SingleStat healthStat;
 
 
 
-    public Stats(int AttackStatAmount, int defenseStatAmount)
+    public Stats(int AttackStatAmount, int defenseStatAmount, int speedStatAmount, int manaStatAmount, int healthStatAmount)
     {
         attackStat = new SingleStat(AttackStatAmount);
         defenseStat = new SingleStat(defenseStatAmount);
+        speedStat = new SingleStat(speedStatAmount);
+        manaStat = new SingleStat(manaStatAmount);
+        healthStat = new SingleStat(healthStatAmount);
     }
 
     private SingleStat GetSingleStat(Type statType)
@@ -33,6 +42,9 @@ public class Stats
             default:
             case Type.Attack: return attackStat;
             case Type.Defense: return defenseStat;
+            case Type.Speed: return speedStat;
+            case Type.Mana: return manaStat;
+            case Type.Health: return healthStat;
         }
     }
 

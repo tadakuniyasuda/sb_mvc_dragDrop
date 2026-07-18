@@ -8,7 +8,7 @@ public class Testing : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        stats= new Stats(10,2);
+        stats= new Stats(20,18, 19,17, 18);
         _uiStatsRaderChart.SetStats(stats);
 
         
@@ -37,4 +37,31 @@ public class Testing : MonoBehaviour
         stats.DecreaseStatAmount(Stats.Type.Defense);
     }
 
+    public void IncreaseSpeed()
+    {
+        stats.IncreaseStatAmount(Stats.Type.Speed);
+    }
+
+    public void DecreaseSpeed()
+    {
+        stats.DecreaseStatAmount(Stats.Type.Speed);
+    }
+    public void IncreaseMana()
+    {
+        stats.IncreaseStatAmount(Stats.Type.Mana);
+    }
+
+    public void DecreaseMana()
+    {
+        stats.DecreaseStatAmount(Stats.Type.Mana);
+    }
+    public void IncreaseHealth()
+    {
+        stats.IncreaseStatAmount(Stats.Type.Health);
+    }
+
+    public void DecreaseHealth()
+    {
+        stats.DecreaseStatAmount(Stats.Type.Health);
+    }
 }
