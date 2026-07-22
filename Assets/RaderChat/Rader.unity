@@ -2763,7 +2763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI_StatsRaderChart
   radarMaterial: {fileID: 2100000, guid: cc7c0c4a8cb498a43b993eeb4439b7f5, type: 2}
-  radarTexture2D: {fileID: 2800000, guid: 256c57a22748f8348a470a667550441b, type: 3}
+  radarTexture2D: {fileID: 2800000, guid: 424944bfbc2d7154fb0bf5f05baf6c8a, type: 3}
   randarMeshCanvasRenderer: {fileID: 1531357634}
 --- !u!1 &1482871164
 GameObject:

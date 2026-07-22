@@ -8,6 +8,12 @@ namespace HPTest
 
         public int Health { private set; get; } = 50;
 
+        public HealthModel(int maxHealth =100, int health = 50)
+        {
+            MaxHealth = maxHealth;
+            Health = health;
+        }
+
         public event Action OnDied;
         public event Action<int> OnChanged;
         public void TakeDamage(int amount)

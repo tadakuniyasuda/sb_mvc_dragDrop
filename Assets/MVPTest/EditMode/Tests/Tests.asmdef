@@ -5,7 +5,11 @@
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
         "GameScripts",
-        "Unity.TextMeshPro"
+        "Unity.TextMeshPro",
+        "asmdef",
+        "MVP_HP_asmbdef",
+        "ComboAsmbdef",
+        "NewAssembly"
     ],
     "includePlatforms": [
         "Editor"

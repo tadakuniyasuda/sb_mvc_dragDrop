@@ -1,9 +1,7 @@
-using UnityEngine;
 
 public interface IHealthDisplay 
 {
-    string Show(int  health);
-
-    
+    void Show(string message , bool isDanger);
+   
 
 }

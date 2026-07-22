@@ -1,24 +1,16 @@
-using TMPro;
 using UnityEngine;
-
-namespace HPTest { 
-
-    public class HealthDisplay : MonoBehaviour, IHealthDisplay
+using HPTest;
+using TMPro;
+public class HealthDisplay : MonoBehaviour, IHealthDisplay
+{
+    [SerializeField] TextMeshProUGUI DisplayHP;
+    public void Show(string message, bool isDanger)
     {
-        [SerializeField] TextMeshPro DisplayHP;
+        DisplayHP.text = message;
+        DisplayHP.color = isDanger ? Color.red : Color.white;
 
-
-        public string Show(int health)
-        {
-             return health.ToString();
-
-        }
-
-        //public void Update()
-        //{
-        //    DisplayHP.text = Show(int );
-        //}
-        
     }
+
+    
 
 }
